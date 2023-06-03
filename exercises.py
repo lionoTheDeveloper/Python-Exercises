@@ -22,6 +22,7 @@
 # print(x)
 
 # Python String casefold() Method
+# Converts string into lower case
 # txt = 'hello, and welcome to my world'
 # x = txt.casefold()
 # print(x)
@@ -67,10 +68,12 @@
 # Python String format() Method
 # txt = 'for only {price:.2f} dollars!'
 # print(txt.format(price = 49))
+
 # txt1 = "my name is {fname}, i'm {age}".format(fname="john",age = 36)
 # txt2 = "my name is {0}, i'm {1}".format("john",36)
 # txt3 = "my name is {}, I'm {}".format('john',36)
 # print(txt1,txt2,txt3)
+
 # txt = 'we have {:<8} chickens.'
 # print(txt.format(49))
 # txt = 'we have {:>8} chickens.'
@@ -91,8 +94,8 @@
 # print(txt.format(13800000000))
 # txt = 'The binary version of {0} is {0:b}'
 # print(txt.format(5))
-# # txt = 'The unicode version of {0} is {:c}'
-# # print(txt.format('a'))
+# txt = 'The unicode version of {0} is {:c}'
+# print(txt.format('a'))
 # txt ='we have {0:d} chickens.'
 # print(txt.format(0b101))
 # txt = 'we have {:e} chickens.'
@@ -127,3 +130,96 @@
 # txt = 'you scored {:.0%}'
 # print(txt.format(0.25))
 # :n		Number format
+
+# format_map()	Formats specified values in a string
+# person = {'name':'Alice','age':25,'occupation':'engineer'}
+# txt = 'my name is {name}, i am {age} years old, and I work as an {occupation}.'
+# print(txt.format_map(person))
+
+# Python String index() Method
+# txt = 'Hello, welcome to my world.'
+# x = txt.index('welcome')
+# print(x)
+# x = txt.index('e',5,10)
+# print(x)
+# print(txt.find('q'))
+# print(txt.index('q')) # throws error
+
+# Python String isalnum() Method
+# txt = 'company12'
+# x = txt.isalnum()
+# print(x)
+# txt = 'company 12'
+# x = txt.isalnum()
+# print(x)
+
+# Python String isalnum() Method
+# txt = 'companyX'
+# x = txt.isalpha()
+# print(x)
+# txt = 'company10'
+# x = txt.isalpha()
+# print(x)
+
+# Python String isascii() Method
+# txt = 'company123'
+# x = txt.isascii()
+# print(x)
+#ASCII reference https://www.w3schools.com/charsets/ref_html_ascii.asp
+
+# txt = '1234'
+# x = txt.isdecimal()
+# print(x)
+# a = '\u0030' #unicode for 0
+# b = '\u0047' #unicode for G
+# print(a.isdecimal())
+# print(b.isdecimal())
+
+# Python String isdigit() Method
+# txt = '50800'
+# x = txt.isdigit()
+# print(x)
+# a = "\u0030" #unicode for 0
+# b = "\u00B2" #unicode for ²
+# print(a.isdigit())
+# print(b.isdigit())
+
+# Python String isidentifier() Method
+#A string is considered a valid identifier if it only contains alphanumeric letters (a-z) and (0-9), or underscores (_). A valid identifier cannot start with a number, or contain any spaces.
+# txt = 'demo'
+# x = txt.isidentifier()
+# print(x)
+# a = 'myfolder'
+# b = 'demo002'
+# c = '2bring'
+# d = 'my demo'
+# print(a.isidentifier())
+# print(b.isidentifier())
+# print(c.isidentifier())
+# print(d.isidentifier())
+
+# Python String islower() Method
+# txt = 'hello world!'
+# x = txt.islower()
+# print(x)
+# a = 'Hello world!'
+# b = 'hello 123'
+# c = 'mynameisPeter'
+# print(a.islower())
+# print(b.islower())
+# print(c.islower())
+
+# Python String isnumeric() Method
+# txt = '566643'
+# x = txt.isnumeric()
+# print(x)
+# a = "\u0030" #unicode for 0
+# b = "\u00B2" #unicode for &sup2;
+# c = "10km2"
+# d = "-1"
+# e = "1.5"
+# print(a.isnumeric())
+# print(b.isnumeric())
+# print(c.isnumeric())
+# print(d.isnumeric())
+# print(e.isnumeric())
